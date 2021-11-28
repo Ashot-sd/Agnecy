@@ -3,6 +3,8 @@ body {
     font-size: 16px;
 }
 
+                /* HEDER */
+
 .header {
     width: 100%;
     position: fixed;
@@ -48,13 +50,19 @@ body {
     transition: all 0.2s ease;
 }
 
+            /* END HEADER */
+
+
+            /* HOME SECTION / SERVICES */
+
 .home-section {
     position: relative;
     height: 100vh;
     background-color: #f6f2f2;
 }
 
-.home-section__cont, .services-cont {
+.home-section__cont,
+.services-cont {
     padding-top: 230px;
     display: flex;
     justify-content: space-between;
@@ -72,17 +80,20 @@ body {
     color: #555454;
 }
 
-.home-section__button, .services-cont__button {
+.home-section__button,
+.services-cont__button {
     display: inline-block;
     margin: 65px 0 0 0;
 }
 
-.home-section__link, .services-cont__link {
+.home-section__link,
+.services-cont__link {
     text-decoration: none;
 }
 
-.home-section__btn, .services-cont__btn {
-    display: flex;
+.home-section__btn,
+.services-cont__btn {
+    display: block;
     height: 55px;
     background-color: #ff2d2d;
     color: #fff;
@@ -90,18 +101,21 @@ body {
     font-size: 19px;
     padding: 0 63px 0 63px;
     line-height: 55px;
+    border: 2px;
     border-radius: 7px;
-    border: none;
+    border: #f6f2f2 2px solid;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.home-section__btn:hover, .services-cont__btn:hover {
+.home-section__btn:hover,
+.services-cont__btn:hover {
     content: "";
     background-color: #fff;
-    color:#ff2d2d;
+    height: 55px;
+    color: #ff2d2d;
     border: #ff2d2d 2px solid;
-    box-sizing: content-box;
-    transition: all 0.3s ease;
+    box-sizing: none;
 }
 
 .home-section__clip {
@@ -124,7 +138,7 @@ body {
     text-transform: uppercase;
     font-size: 42px;
     font-weight: 600;
-    color: #555454; 
+    color: #555454;
 }
 
 .services-cont__offer_h3 {
@@ -137,17 +151,34 @@ body {
     width: 50%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .services-cont__item {
-    width: 24%;
+    width: 270px;
+    margin-top: 49px;
+}
+
+.services-cont__item_box {
+    padding-bottom: 27px;
 }
 
 .services-cont__item_h3 {
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-weight: 600;
     font-size: 24px;
+    color: #4c4c4c;
 }
 
-.first-item {
-    padding: 0 0 25px 0;
+.span {
+    text-transform: uppercase;
 }
+
+.services-cont__item_p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 20px;
+    color: #7c7c7c;
+}
+
+                /* END HOME SECTION / SERVICES */
