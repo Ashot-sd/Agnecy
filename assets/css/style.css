@@ -183,7 +183,7 @@ body {
     border-bottom: 1px solid #000;
 } */
 
-.services-cont::after {
+/* .services-cont::after {
     content: "";
     position: absolute;
     width: 75%;
@@ -191,7 +191,7 @@ body {
     border-bottom: 1px solid #d8d8d8;
     ;
 
-}
+} */
 
 .products-content {
     padding-top: 220px;
@@ -202,11 +202,11 @@ body {
     line-height: 3em;
 }
 
-.products-offer::after {
+/* .products-offer::after {
     content: "";
     position: absolute;
     margin: 0 auto;
     width: 135px;
     border-bottom: 1px solid #ff2d2d;
-}
+} */
 
