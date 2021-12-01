@@ -127,7 +127,8 @@ body {
     padding-top: 115px;
 }
 
-.services-cont__offer_h2,  .products-offer_h2{
+.services-cont__offer_h2,
+.products-offer_h2 {
     text-transform: uppercase;
     font-size: 42px;
     font-weight: 600;
@@ -167,7 +168,8 @@ body {
     text-transform: uppercase;
 }
 
-.services-cont__item_p,  .products-offer_p{
+.services-cont__item_p,
+.products-offer_p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8em;
@@ -175,26 +177,14 @@ body {
     color: #7c7c7c;
 }
 
-/* .services-cont::after {
-    display: block;
-    width:75%;
-    content: '';
-    position: absolute;
-    border-bottom: 1px solid #000;
-} */
-
-/* .services-cont::after {
-    content: "";
-    position: absolute;
-    width: 75%;
-    padding-top: 650px;
-    border-bottom: 1px solid #d8d8d8;
-    ;
-
-} */
+.services-line {
+    padding-top: 110px;
+    width: 100%;
+    border-bottom: 2px solid #c7c5c5;
+}
 
 .products-content {
-    padding-top: 220px;
+    padding-top: 110px;
 }
 
 .products-offer {
@@ -202,11 +192,74 @@ body {
     line-height: 3em;
 }
 
-/* .products-offer::after {
-    content: "";
-    position: absolute;
+.products-line {
     margin: 0 auto;
-    width: 135px;
-    border-bottom: 1px solid #ff2d2d;
-} */
+    padding: 10px;
+    width: 15%;
+    border-bottom: 4px solid #ff2d2d;
+}
+
+.products-nav {
+    padding-top: 90px;
+}
+
+.products-nav__list_items {
+    display: flex;
+    justify-content: center;
+}
+
+.products-nav__list_item {
+    margin: 0 59px 0 0;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.products-nav__list_item_name {
+    text-decoration: none;
+    color: #4c4c4c;
+}
+
+.products-nav__list_item_name:hover {
+    content: "";
+    color: #ff3f40;
+    transition: all 0.2s ease;
+}
+
+.products-gallery {
+    padding: 68px 0 100px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products-gallery__block {
+    padding-top: 20px;
+    width: 290px;
+    height: 290px;
+    overflow: hidden;
+}
+
+.products-end_h2 {
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.products-end_p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+    padding-top: 20px;
+    color: #7c7c7c;
+}
+
+
+.products-end_line {
+    padding: 10px;
+    width: 15%;
+    border-bottom: 4px solid #ff2d2d;
+}
 
