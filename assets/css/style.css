@@ -102,13 +102,18 @@ body {
 }
 
 .home-section__btn:hover,
-.services-cont__btn:hover {
+.services-cont__btn:hover,
+.contact-link-btn:hover {
     content: "";
     background-color: #fff;
     height: 55px;
     color: #ff2d2d;
     border: #ff2d2d 2px solid;
     box-sizing: none;
+}
+
+.contact-link-btn:hover {
+    height: 100%;
 }
 
 .home-section__clip {
@@ -304,12 +309,16 @@ body {
 .soc-list_item {
     margin-right: 30px;
     padding-bottom: 30px;
-
 }
 
 .soc-list_item a {
     text-decoration: none;
     color: rgb(109, 108, 108);
+}
+
+.soc-list_item a:hover {
+    transition: all 0.3s ease;
+    color: #ff3f40;
 }
 
 .team-gallery {
@@ -322,9 +331,84 @@ body {
     display: flex;
 }
 
+.team-glerry__block_items {
+    position: relative;
+    width: 195px;
+    height: 215px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+}
+
 .team-glerry__block_item {
     max-width: 195px;
     object-fit: cover;
-    margin-right: 10px;
+    z-index: 1;
+}
 
+.team-glerry__block_item:hover {
+    max-width: 195px;
+    object-fit: cover;
+    transition: all 0.3s all;
+    opacity: 0.9;
+    z-index: 0;
+}
+
+.team-glerry__block_items h5 {
+    position: absolute;
+    background-color: rgb(97, 96, 96);
+    color: white;
+    font-size: 18px;
+    top: 80%;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    line-height: 200%;
+    z-index: 0;
+}
+
+.contact {
+    padding-top: 100px;
+}
+
+.contact-cont {
+    padding: 140px 300px;
+    background: url("/assets/media/img/13.jpg") no-repeat center;
+}
+
+.contact-heading {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.contact-text {
+    color: #fff;
+    font-size: 16px;
+    padding: 35px 0 60px 150px;
+}
+
+.contact-form {
+    padding-left: 200px;
+}
+
+.contact-mail {
+    border: none;
+    height: 35px;
+    width: 300px;
+    border-radius: 7px;
+    padding: 15px;
+}
+
+.contact-link-btn {
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    border: 2px transparent solid;
+    border-radius: 7px;
+    background-color: #ff2d2d;
+    font-size: 17.9px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
